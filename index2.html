@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let peso = prompt("ingrese su peso")
+        let altura = prompt("ingrese su altura")
+
+        let indice = (peso / (altura ** 2))
+
+        
+            if (indice <= 16.00){
+                document.write("Infrapeso: Delgadez severa")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice == 16.00 && indice <= 16.99){
+                document.write("Infrapeso: Delgadez moderada")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice >= 17.00 && indice <= 18.49){
+                document.write("Infrapeso: Delgadez aceptable")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice >= 18.50 && indice <= 24.99){
+                document.write("Peso normal")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice >= 25.00 && indice <= 29.99){
+                document.write("Sobrepeso")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice >= 30.00 && indice <= 34.09){
+                document.write("Obeso: tipo I")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice >= 35.00 && indice <= 40.00){
+                document.write("Obeso: tipo II")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+            else if (indice >= 40.00){
+                document.write("Obeso: tipo III")
+                document.write("Su indice de masa corporal es: " + indice)
+            }
+        
+    </script>
+</body>
+</html>
